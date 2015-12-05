@@ -1,0 +1,44 @@
+/** Add a comment at the beginning of your CSS styles with your name **/
+
+ /**Gretchen Harju's advice styles**/
+
+ .advice-gretchenharju {
+   background-color: #fff;
+ }
+
+ .advice-gretchenharju a:hover {
+ 	font-weight: bold;
+ }
+
+ .advice-gretchenharju section {
+   padding: 0 10px 0 100px;
+     border: single;
+     border-color: black;
+     margin: 10px 100px 10px 100px;
+ }
+
+ .advice-gretchenharju h4 {
+ 	margin-left: 5px;
+ 	margin-bottom: 15px;
+ 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+ }
+
+.advice-gretchenharju p {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: -10px;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #4A545A;
+}
+
+.advice-gretchenharju footer {
+    clear: both;
+    position: relative;
+    background-color: #fff4b1;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/**End of Gretchen Harju's styles**/
