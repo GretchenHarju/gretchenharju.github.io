@@ -1,0 +1,54 @@
+
+{
+    "defaultHours":{
+        "Monday":{
+            "hours":"24 hours"
+        },"Tuesday":{
+            "hours":"24 hours"
+        },"Wednesday":{
+            "hours":"24 hours"
+        },"Thursday":{
+            "hours":"24 hours"
+        },"Friday":{
+            "hours":"Closes Midnight"
+        },"Saturday":{
+            "hours":"7:30am - Midnight"
+        },"Sunday":{
+            "hours":"Opens 11am"
+        }
+    },
+    "exceptions":{
+        "0":{
+            "startDate":"2017/03/03",
+            "endDate":"2017/03/03",
+            "hours":"24 hrs - 6pm"
+        },"1":{
+            "startDate":"2017/03/04",
+            "endDate":"2017/03/04",
+            "hours":"11am - 6pm"
+        },"2":{
+            "startDate":"2017/03/05",
+            "endDate":"2017/03/05",
+            "hours":"Closed"
+        },"3":{
+            "startDate":"2017/03/06",
+            "endDate":"2017/03/10",
+            "hours":"7:30am - 6pm"
+        },"4":{
+            "startDate":"2017/03/11",
+            "endDate":"2017/03/11",
+            "hours":"11am - 6pm"
+        },"5":{
+            "startDate":"2017/03/12",
+            "endDate":"2017/03/12",
+            "hours":"11am - 24hrs"
+        },"6":{
+            "startDate":"2017/04/22",
+            "endDate":"2017/05/02",
+            "hours":"24 hours"
+        },"7":{
+            "startDate":"2017/05/03",
+            "endDate":"2017/05/03",
+            "hours":"24hrs - 10pm"
+        }
+    }}

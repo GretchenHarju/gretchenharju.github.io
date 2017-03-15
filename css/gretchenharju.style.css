@@ -16,14 +16,21 @@
      border-color: black;
      margin: 10px 100px 10px 100px;
  }
+ 
+ .advice-gretchenharju h1 {
+ 	margin-left: 10px;
+ 	margin-bottom: 15px;
+ 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+ }
 
- .advice-gretchenharju h4 {
- 	margin-left: 5px;
+ .advice-gretchenharju h2 {
+ 	margin-left: 10px;
  	margin-bottom: 15px;
  	font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
  }
 
 .advice-gretchenharju p {
+	line-height: 90%;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: -10px;
@@ -32,11 +39,12 @@
 }
 
 .advice-gretchenharju footer {
-    clear: both;
+    padding: 0 10px 0 100px;
+	clear: both;
     position: relative;
     background-color: #fff4b1;
     height: 100px;
-    text-align: center;
+    text-align: bottom;
     font-size: 15px;
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
 }
