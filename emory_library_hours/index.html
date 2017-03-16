@@ -5,60 +5,64 @@
     <title>Emory Library Hours</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+<!-- comment out
 <body>
     <div id="content">
-<!-- TEMP DO NOT PROCESS
       <script type="text/html" id='library_hours'>
-      -->
-        <!-- TODO update this markup to reflect the structure of the JSON data -->
-<div class="hours">
-        <h1>Hours</h1>
-        </div>
-        <div class="days">
-        <h2>Today</h2>
-        <p>Monday, Feb. 27: <time> 24 hours </time> </p>
-        <h2>Tomorrow</h2>
-        <p>Tuesday, Feb. 28: 24 hours</p>
-        <h2>Next Five Days</h2>
-        <p>
+    </body>
+-->
+
+<body>
+	<section>
+    	<div class="container">
+      		<div class="row">
+        		<div class="hour-section col-4">
+         			<h2>Today</h2>
+          			<span class="rule"></span>
+          			<p>Monday, Feb. 27, <time>24 hours</time></p>
+        		</div>
+         		<div class="hour-section col-4">
+          			<h2>Tomorrow</h2>
+          			<span class="rule"></span>
+          			<p>Tuesday, Feb. 28, <time>24 hours</time></p>
+        		</div>
+         		<div class="hour-section col-4">
+          			<h2>More Hours</h2>
+          				<span class="rule"></span>
+          				<p>Wednesday, Mar. 1, <time>24 hours</time></p>
+         				<p>Thursday, Mar. 2, <time>24 hours</time></p>
+          				<p>Friday, Mar. 3, <time>24 hrs - 6pm</time></p>
+          				<p>Saturday, Mar. 4, <time>11am - 6pm</time></p>
+          				<p>Sunday, Mar. 5, <time>Closed</time></p>
+          				<h3><a href="http://web.library.emory.edu/using-the-library/visiting-the-library/hours/full-listing.html">All Hours</a></h3>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+  </section>
+</body>
+	
+<!-- comment out
         <ul>
-        <li>
-        Wednesday, Mar. 01: 24 hours 
-        </li>
-        <li>
-        Thursday, Mar. 02: 24 hours 
-        </li>
-        <li>
-        Friday, Mar. 03: Closes Midnight 
-        </li>
-        <li>
-        Saturday, Mar. 04: 7:30am - Midnight
-        </li>
-        <li>
-        Sunday, Mar. 05: Opens 11am
-        </li>
-        </ul>
-        </p>
-        <!-- 
-        <ul>
-          <% _.each(hours, function(hour, key, list) { %>
-            <li class="<%= hour %>"><%= hour %></li>
+          <% _.each(defaultHours, function(day, key, list) { %>
+            <li class="<%= day %>"><%= day.hours %></li>
           <% });%>
         </ul>
-        -->
+       
+       <ul>
+          <% _.each(exceptions, function(hour, key, list) { %>
+            <li class="<%= day.hours %>"><%= key %> - <%= day.hours %></li>
+          <% });%>
+        </ul>
       </script>
       <div id="target"></div>
       </div>
-
     </div>
-    <!-- TODO you'll want to manage these assets (possibly something like http://www.createjs.com/preloadjs)
-    JQuery is for making the AJAX request (https://jquery.com/)
-    Moment.js is for formatting your dates nicely (https://momentjs.com/)
-    Underscore.js is a well-documented simple templating library (http://underscorejs.org/) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
-    <!-- Here is the only Javascript file you write yourself: -->
     <script src="js/index.js"></script>
-</body>
+    -->
 </html>

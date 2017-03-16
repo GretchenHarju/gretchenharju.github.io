@@ -4,11 +4,10 @@
 
 var json = (function () {
     var json = null;
-    // JQuery Ajax Request Documentation: https://api.jquery.com/jquery.ajax/
     $.ajax({
         'async': false,
         'global': false,
-        'url': 'http://web.library.emory.edu/using-the-library/visiting-the-library/hours/index.json',
+        'url': 'http://gretchenharju.github.io/emory_library_hours/index.json',
         'data': {},
         'dataType': 'json',
         success: function (data) {
@@ -22,10 +21,5 @@ var json = (function () {
     return json
 })();
 
-// ---------------------
-// Manipulate Response Data
-// ---------------------
-
-// Using Underscore.js (http://underscorejs.org/)
 var template = library_hours.innerHTML;
-target.innerHTML = _.template(template,{hours:json});
+target.innerHTML = _.template(template,{defaultHours:json.defaultHours, exceptions:json.exceptions});
